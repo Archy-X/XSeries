@@ -1856,6 +1856,8 @@ public enum XMaterial {
         int lastDot = version.lastIndexOf('.');
         if (version.indexOf('.') != lastDot) version = version.substring(0, lastDot);
 
+        version = version.split(" ")[0]; // Remove extra words
+
         return version;
     }
 
